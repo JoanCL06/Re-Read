@@ -137,3 +137,80 @@ section.activa {
   margin-top: 10px; /* Espacio encima del texto descriptivo */
   font-size: 14px; /* Tamano pequeno del texto */
 }
+
+/* --- Estilos base (los que ya tenias) --- */
+/* ... aqui van todos los estilos que ya escribiste ... */
+
+/* --- Estilos responsivos --- */
+@media (max-width: 1024px) {
+  .ventas {
+    position: static;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .ventas a {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .intro {
+    max-width: 90%;
+  }
+
+  .menu button {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .precios {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .libro {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .ebooks-container {
+    gap: 20px;
+  }
+
+  .ebook {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 10px;
+  }
+
+  .ventas {
+    margin-top: 20px;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu button {
+    margin: 5px;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .ebook p {
+    font-size: 13px;
+  }
+}
